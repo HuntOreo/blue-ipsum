@@ -1,5 +1,5 @@
-import { createEl, appendEl } from './helper';
-import Button from './parts/Button';
+import { createEl, appendEl } from '../helper';
+import Button from './Button';
 
 const Header = function () {
   const header = createEl({ tag: 'header' });

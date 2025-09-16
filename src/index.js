@@ -1,6 +1,6 @@
 import './style.css';
 import './styles/home.css';
-import Header from './Header.js';
+import Header from './parts/Header.js';
 import Home from './pages/Home.js';
 import Products from './pages/Products.js';
 import { appendEl } from './helper.js';
