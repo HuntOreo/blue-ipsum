@@ -10,9 +10,21 @@ const Header = function () {
   accountContainer.classList.add('accountBtns');
 
   const navBtns = [
-    new Button({ content: 'Home', event: changePage }).element,
-    new Button({ content: 'Products', event: changePage }).element,
-    new Button({ content: 'Contact', event: changePage }).element,
+    new Button({
+      content: 'Home', event: {
+        type: 'click', func: changePage
+      }
+    }).element,
+    new Button({
+      content: 'Products', event: {
+        type: 'click', func: changePage
+      }
+    }).element,
+    new Button({
+      content: 'Customers', event: {
+        type: 'click', func: changePage
+      }
+    }).element,
   ]
 
   const accountBtns = [
