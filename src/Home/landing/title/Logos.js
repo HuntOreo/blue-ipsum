@@ -1,8 +1,8 @@
-import appendEl from '../../helpers/appendEl';
-import createEl from '../../helpers/createEl';
-import forbes from '../img/forbes.svg';
-import microsoft from '../img/microsoft.svg';
-import tinder from '../img/tinder.svg';
+import appendEl from '../../../../helpers/appendEl';
+import createEl from '../../../../helpers/createEl';
+import forbes from '../../img/forbes.svg';
+import microsoft from '../../img/microsoft.svg';
+import tinder from '../../img/tinder.svg';
 
 const Logos = function () {
   const container = createEl({ tag: 'div', classAttr: 'compLogos' });

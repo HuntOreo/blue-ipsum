@@ -1,5 +1,5 @@
-import appendEl from '../helpers/appendEl';
-import createEl from '../helpers/createEl'
+import appendEl from '../../../helpers/appendEl';
+import createEl from '../../../helpers/createEl'
 import Logos from './title/Logos';
 
 const Title = function () {
@@ -27,6 +27,7 @@ const Title = function () {
   appendEl(callToActionContainer, callToActionElements)
   appendEl(container, finalElements);
 
+  container.classList.add('title');
   return container;
 }
 
