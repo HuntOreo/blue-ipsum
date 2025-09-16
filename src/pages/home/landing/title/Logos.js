@@ -5,10 +5,10 @@ import microsoft from '../../img/microsoft.svg';
 import tinder from '../../img/tinder.svg';
 
 const Logos = function () {
-  const container = createEl({ tag: 'div', classAttr: 'compLogos' });
-  const forbesImg = createEl({ tag: 'img', classAttr: 'customerLogo' });
-  const microsoftImg = createEl({ tag: 'img', classAttr: 'customerLogo' });
-  const tinderImg = createEl({ tag: 'img', classAttr: 'customerLogo' });
+  const container = createEl({ classAttr: ['compLogos'] });
+  const forbesImg = createEl({ tag: 'img', classAttr: ['customerLogo'] });
+  const microsoftImg = createEl({ tag: 'img', classAttr: ['customerLogo'] });
+  const tinderImg = createEl({ tag: 'img', classAttr: ['customerLogo'] });
 
   forbesImg.src = forbes;
   microsoftImg.src = microsoft;

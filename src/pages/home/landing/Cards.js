@@ -4,8 +4,8 @@ const Cards = function () {
   const container = createEl({ tag: 'container' });
   container.classList.add('cards');
 
-  const backgroundBox = createEl({ tag: 'div', classAttr: 'background' });
-  const foregroundBox = createEl({ tag: 'div', classAttr: 'foreground' });
+  const backgroundBox = createEl({ classAttr: ['background'] });
+  const foregroundBox = createEl({ classAttr: ['foreground'] });
 
   const elements = [backgroundBox, foregroundBox];
 
