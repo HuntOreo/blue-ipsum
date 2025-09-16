@@ -9,7 +9,7 @@ const app = document.querySelector('#app');
 
 const elements = [
   Header(),
-  Home(),
+  // Home(),
   Products()
 ];
 
