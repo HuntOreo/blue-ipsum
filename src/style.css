@@ -1,1 +1,5 @@
-@import '../node_modules/@huntoreocodes/hunter-normalize/hunter-normalize.css'
+@import '../node_modules/@huntoreocodes/hunter-normalize/hunter-normalize.css';
+
+.customerLogo {
+  height: 100px;
+}

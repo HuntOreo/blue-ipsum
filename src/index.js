@@ -1,6 +1,13 @@
 import './style.css';
-import Component from './Component';
+import Header from './Header.js';
+import Home from './Home.js';
+import appendEl from './helpers/appendEl.js';
 
-const body = document.querySelector('body');
+const app = document.querySelector('#app');
 
-body.append(Component());
+const elements = [
+  Header(),
+  Home()
+]
+
+appendEl(app, elements);
