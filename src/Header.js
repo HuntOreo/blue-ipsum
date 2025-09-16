@@ -1,4 +1,5 @@
 import { createEl, appendEl } from './helper';
+import Button from './parts/Button';
 
 const Header = function () {
   const header = createEl({ tag: 'header' });
@@ -8,15 +9,15 @@ const Header = function () {
   accountContainer.classList.add('accountBtns');
 
   const navBtns = [
-    createEl({ tag: 'button', content: 'Home' }),
-    createEl({ tag: 'button', content: 'Products' }),
-    createEl({ tag: 'button', content: 'Contact' }),
-    createEl({ tag: 'button', content: 'About' }),
+    new Button({ content: 'Home' }).element,
+    new Button({ content: 'Products' }).element,
+    new Button({ content: 'Contact' }).element,
+    new Button({ content: 'About' }).element,
   ]
 
   const accountBtns = [
-    createEl({ tag: 'button', content: 'Log In' }),
-    createEl({ tag: 'button', content: 'Sign Up' }),
+    new Button({ content: 'Login' }).element,
+    new Button({ content: 'Sign up', color: '#2A8E9E' }).element,
   ]
 
   const elements = [
