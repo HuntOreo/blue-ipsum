@@ -1,5 +1,6 @@
 import { createEl, appendEl } from '../helper';
 import Button from './Button';
+import { changePage } from './events';
 
 const Header = function () {
   const header = createEl({ tag: 'header' });
@@ -9,10 +10,9 @@ const Header = function () {
   accountContainer.classList.add('accountBtns');
 
   const navBtns = [
-    new Button({ content: 'Home' }).element,
-    new Button({ content: 'Products' }).element,
-    new Button({ content: 'Contact' }).element,
-    new Button({ content: 'About' }).element,
+    new Button({ content: 'Home', event: changePage }).element,
+    new Button({ content: 'Products', event: changePage }).element,
+    new Button({ content: 'Contact', event: changePage }).element,
   ]
 
   const accountBtns = [
