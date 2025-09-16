@@ -1,5 +1,5 @@
-import appendEl from '../../../../helpers/appendEl';
-import createEl from '../../../../helpers/createEl';
+import { createEl, appendEl } from '../../../../helper.js';
+
 import forbes from '../../img/forbes.svg';
 import microsoft from '../../img/microsoft.svg';
 import tinder from '../../img/tinder.svg';

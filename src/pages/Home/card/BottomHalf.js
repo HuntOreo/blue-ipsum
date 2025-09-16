@@ -1,5 +1,4 @@
-import appendEl from '../../../helpers/appendEl';
-import createEl from '../../../helpers/createEl';
+import { createEl, appendEl } from '../../../helper';
 import cardIcon from '../img/card-icon.svg';
 import Tile from './bottomHalf/Tile';
 

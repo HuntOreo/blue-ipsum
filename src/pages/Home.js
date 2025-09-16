@@ -1,5 +1,6 @@
-import createEl from '../helpers/createEl'
-import appendEl from '../helpers/appendEl';
+import { createEl, appendEl } from '../helper.js';
+
+
 import Landing from './Home/Landing';
 import Card from './Home/Card';
 

@@ -1,5 +1,4 @@
-import appendEl from '../../../helpers/appendEl';
-import createEl from '../../../helpers/createEl';
+import { createEl, appendEl } from '../../../helper';
 
 const TopHalf = function () {
   const container = createEl({ classAttr: 'half' });

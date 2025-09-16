@@ -1,5 +1,4 @@
-import appendEl from '../../../../helpers/appendEl';
-import createEl from '../../../../helpers/createEl';
+import { createEl, appendEl } from '../../../../helper';
 
 const Tile = function ({ icon, header, desc }) {
   const container = createEl({ tag: 'container' });

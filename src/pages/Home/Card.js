@@ -1,5 +1,4 @@
-import createEl from '../../helpers/createEl';
-import appendEl from '../../helpers/appendEl'
+import { createEl, appendEl } from '../../helper.js';
 
 import BottomHalf from './card/BottomHalf';
 import TopHalf from './card/TopHalf';

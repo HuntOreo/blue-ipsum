@@ -28,4 +28,17 @@ const createEl = function ({ tag, content, classAttr }) {
   return element;
 }
 
-export default createEl;
+const appendEl = function (parent, elements) {
+  if (elements[1]) {
+    for (let element of elements) {
+      parent.append(element);
+    }
+  } else {
+    parent.append(elements);
+  }
+}
+
+export {
+  createEl,
+  appendEl
+}

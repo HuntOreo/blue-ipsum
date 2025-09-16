@@ -1,5 +1,4 @@
-import appendEl from '../../../helpers/appendEl';
-import createEl from '../../../helpers/createEl'
+import { createEl, appendEl } from '../../../helper.js';
 
 const Cards = function () {
   const container = createEl({ tag: 'container' });

@@ -1,5 +1,4 @@
-import createEl from '../../helpers/createEl';
-import appendEl from '../../helpers/appendEl';
+import { createEl, appendEl } from '../../helper';
 import Cards from './landing/Cards';
 import Title from './landing/Title';
 

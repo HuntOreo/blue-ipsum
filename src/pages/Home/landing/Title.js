@@ -1,5 +1,5 @@
-import appendEl from '../../../helpers/appendEl';
-import createEl from '../../../helpers/createEl'
+import { createEl, appendEl } from '../../../helper';
+
 import Logos from './title/Logos';
 
 const Title = function () {
