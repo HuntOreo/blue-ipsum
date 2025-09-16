@@ -2,7 +2,7 @@ import { createEl, appendEl } from '../../../../helper';
 
 const Tile = function ({ icon, header, desc }) {
   const container = createEl({ tag: 'container' });
-  const iconImg = createEl({ tag: 'img', classAttr: 'icon' });
+  const iconImg = createEl({ tag: 'img', classAttr: ['icon'] });
   iconImg.src = icon;
   const headerThree = createEl({ tag: header.size, content: header.content });
   const p = createEl({ tag: 'p', content: desc });

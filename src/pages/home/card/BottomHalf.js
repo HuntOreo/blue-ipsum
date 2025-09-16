@@ -3,7 +3,7 @@ import cardIcon from '../img/card-icon.svg';
 import Tile from './bottomHalf/Tile';
 
 const BottomHalf = function () {
-  const container = createEl({ classAttr: 'half' });
+  const container = createEl({ classAttr: ['half'] });
   container.classList.add('bottom');
 
   const tiles = [

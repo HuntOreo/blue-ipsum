@@ -1,5 +1,4 @@
 const createEl = function ({ tag, content, classAttr }) {
-
   if (tag && !content && !classAttr) {
     if (tag == 'container') {
       const element = document.createElement('div');
@@ -16,14 +15,20 @@ const createEl = function ({ tag, content, classAttr }) {
 
   if (!tag && !content && classAttr) {
     const element = document.createElement('div');
-    element.classList.add(classAttr);
+    for (let name of classAttr) {
+      element.classList.add(name);
+    }
     return element;
   }
 
   const element = document.createElement(tag);
 
   if (content) element.textContent = content;
-  if (classAttr) element.classList.add(classAttr);
+  if (classAttr) {
+    for (let name of classAttr) {
+      element.classList.add(name);
+    }
+  };
 
   return element;
 }

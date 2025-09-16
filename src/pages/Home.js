@@ -1,8 +1,7 @@
 import { createEl, appendEl } from '../helper.js';
 
-
-import Landing from './Home/Landing';
-import Card from './Home/Card';
+import Landing from './home/Landing.js';
+import Card from './home/Card.js';
 
 const Home = function () {
   const container = createEl({ tag: 'container' });

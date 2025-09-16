@@ -1,7 +1,7 @@
 import { createEl, appendEl } from '../../../helper';
 
 const Tile = function (main, desc) {
-  const container = createEl({ classAttr: 'point' });
+  const container = createEl({ classAttr: ['point'] });
   const header = createEl({ tag: 'h1', content: main });
   const p = createEl({ tag: 'p', content: desc })
 

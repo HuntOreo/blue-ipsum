@@ -1,7 +1,7 @@
 import { createEl, appendEl } from '../helper';
-import Pitch from './Products/Pitch';
-import Plans from './Products/Plans';
-import CallToAction from './Products/CallToAction';
+import Pitch from './products/Pitch';
+import Plans from './products/Plans';
+import CallToAction from './products/CallToAction';
 
 const Products = function () {
   const container = createEl({ tag: 'container' });

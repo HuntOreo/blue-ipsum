@@ -1,7 +1,7 @@
 import { createEl, appendEl } from '../../../helper';
 
 const TopHalf = function () {
-  const container = createEl({ classAttr: 'half' });
+  const container = createEl({ classAttr: ['half'] });
   container.classList.add('top');
   const header = createEl({
     tag: 'h2',
