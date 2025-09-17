@@ -1,6 +1,5 @@
 import './style.css';
 import './styles/header.css';
-import './styles/footer.css';
 import './styles/home.css';
 import './styles/customers.css'
 import Header from './parts/Header.js';

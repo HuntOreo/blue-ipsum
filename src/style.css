@@ -35,3 +35,14 @@ button {
 .customerLogo {
   height: 100px;
 }
+
+footer {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  color: var(--font-secondary);
+}
