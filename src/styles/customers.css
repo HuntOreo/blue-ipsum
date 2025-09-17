@@ -1,0 +1,53 @@
+.customers {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+}
+
+.customers,
+.customers .preferences {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(10px, 15vw, 75px);
+}
+
+.customers .preferences h2 {
+  padding-bottom: 30px;
+  
+  position: relative;
+
+  text-align: center;
+}
+
+.customers .preferences h2::before {
+  content: 'WHY US';
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.customers .preferences .tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.customers .preferences .tile {
+  min-height: 200px;
+  padding: 20px;
+
+  background-color: var(--background);
+  border-radius: 10px;
+}
+
+.customers .volatility {
+  grid-row: 3;
+  grid-column: 1 / 3;
+}
