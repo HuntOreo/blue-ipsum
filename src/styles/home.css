@@ -1,16 +1,166 @@
-#app > .home > .landing {
+.home {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 1000px;
 }
 
-.cards .background {
-  height: 300px;
-  width: 250px;
+.home .landing {
+  min-height: 550px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.home .landing .title,
+.home .landing .cards {
+  flex: 1;
+}
+
+/* 
+  Landing - Titie
+  ================
+*/
+.home .landing .title  {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  color: var(--dark-blue);
+}
+
+.home .landing .title h1 {
+  font-size: 3rem;
+  line-height: normal;
+}
+
+.home .landing .title .wrapper,
+.home .landing .callToAction,
+.home .landing .compLogos {
+  max-width: 75%;
+}
+
+.home .landing .callToAction {
+  display: flex;
+
+  position: relative;
+  
+  font-size: 0.8rem;
+}
+
+.home .landing .callToAction input {
+  padding: 12px;
+  width: 100%;
+
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.home .landing .callToAction button { 
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  position: absolute;
+  right: 0;
+  top: 3px;
+  right: 2px;
+
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  color: var(--background);
+}
+
+.home .landing .callToAction img {
+  height: 1rem;
+}
+
+.home .landing .compLogos {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.home .compLogos .customerLogo {
+  height: 75px;
+}
+
+/* 
+  Landing - Cards
+  ================
+*/
+.landing .cards {
+  flex: 1;
+  position: relative;
+}
+
+.landing .cards .background {
+  height: 350px;
+  width: 300px;
   
   background-color: gray;
 }
 
-.cards .foreground {
+.landing .cards .foreground {
   height: 250px;
   width: 200px;
   background: lightblue;
+  
+  position: absolute;
+  top: -40px;
+  left: 40%;
+}
+
+/* 
+  Pitch
+  ======
+*/
+.home .pitch {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: clamp(10px, 15vw, 75px);
+  
+  border-radius: 20px;
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.home .pitch .half {
+  display: flex;
+}
+
+.home .top {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.home .top::before {
+  content: 'FUTURE PAYMENT';
+  position: absolute;
+  top: 0;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.home .top h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: black;
+}
+
+.home .top p {
+  padding: 50px;
+  
+  color: var(--font-secondary);
+  text-shadow: 0px 0px 5px lightgray;
+}
+
+.home .top > * {
+  flex: 1;
 }

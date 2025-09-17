@@ -4,11 +4,18 @@
   --dark-blue: #013347;
   --background: #E9F3F4;
   --midnight-black: #1D1E20;
+  --font-secondary: #708792;
 }
 
 body {
   background-color: var(--background);
   font-family: Helvetica, system-ui, sans-serif;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
