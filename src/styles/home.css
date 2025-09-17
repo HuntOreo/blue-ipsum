@@ -104,17 +104,21 @@
   position: relative;
 }
 
+.landing .cards > * {
+  border-radius: 20px;
+}
+
 .landing .cards .background {
   height: 350px;
   width: 300px;
   
-  background-color: gray;
+  background: linear-gradient(var(--dark-blue), var(--background));
 }
 
 .landing .cards .foreground {
   height: 250px;
   width: 200px;
-  background: lightblue;
+  background: linear-gradient(var(--light-blue), var(--background));
   
   position: absolute;
   top: -40px;
