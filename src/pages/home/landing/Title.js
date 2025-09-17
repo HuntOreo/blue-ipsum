@@ -15,7 +15,7 @@ const Title = function () {
   const wrapper = createEl({ tag: 'wrapper' });
   const p = createEl({ tag: 'p', content: desc });
   const callToActionContainer =
-    createEl({ tag: 'div', classAttr: 'callToAction' });
+    createEl({ tag: 'div', classAttr: ['callToAction'] });
   const input = createEl({ tag: 'input' });
   const submit = createEl({ tag: 'button', content: 'submit' });
 

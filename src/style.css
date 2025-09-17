@@ -1,4 +1,20 @@
 @import '../node_modules/@huntoreocodes/hunter-normalize/hunter-normalize.css';
+:root {
+  --light-blue: #2a8e9e;
+  --dark-blue: #013347;
+  --background: #E9F3F4;
+  --midnight-black: #1D1E20;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Helvetica, system-ui, sans-serif;
+}
+
+button {
+  border: none;
+  background-color: unset;
+}
 
 .customerLogo {
   height: 100px;

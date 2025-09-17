@@ -1,10 +1,13 @@
 import { createEl, appendEl } from '../helper';
 import Button from './Button';
 import { changePage } from './events';
+import logoIcon from '../img/logo.svg';
 
 const Header = function () {
   const header = createEl({ tag: 'header' });
-  const logo = createEl({ tag: 'div', classAttr: 'logo', content: 'Logo' });
+  const logoImg = createEl({ tag: 'img' });
+  logoImg.src = logoIcon;
+  const logo = createEl({ tag: 'div', classAttr: ['logo'], content: 'Logo' });
   const nav = createEl({ tag: 'nav' });
   const accountContainer = createEl({ tag: 'container' });
   accountContainer.classList.add('accountBtns');
@@ -35,7 +38,7 @@ const Header = function () {
   const elements = [
     logo, nav, accountContainer
   ]
-
+  appendEl(logo, logoImg);
   appendEl(nav, navBtns);
   appendEl(accountContainer, accountBtns);
   appendEl(header, elements);
