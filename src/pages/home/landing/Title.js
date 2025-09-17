@@ -1,5 +1,5 @@
 import { createEl, appendEl } from '../../../helper';
-
+import arrow from '../img/white_arrow_outward.svg';
 import Logos from './title/Logos';
 
 const Title = function () {
@@ -15,16 +15,22 @@ const Title = function () {
   const wrapper = createEl({ tag: 'wrapper' });
   const p = createEl({ tag: 'p', content: desc });
   const callToActionContainer =
-    createEl({ tag: 'div', classAttr: 'callToAction' });
+    createEl({ tag: 'div', classAttr: ['callToAction'] });
   const input = createEl({ tag: 'input' });
-  const submit = createEl({ tag: 'button', content: 'submit' });
+  input.setAttribute('placeholder', 'Your email');
+  const submit = createEl({ tag: 'button', content: 'Get Started' });
+  const icon = createEl({ tag: 'img' });
+  icon.src = arrow;
+
+  appendEl(submit, icon);
 
   const callToActionElements = [input, submit]
-  const finalElements = [headerOne, wrapper, callToActionContainer, Logos()];
+  const wrapperElem = [p, callToActionContainer, Logos()]
+  const finalElements = [headerOne, wrapper];
 
   appendEl(container, headerOne);
-  appendEl(wrapper, p);
   appendEl(callToActionContainer, callToActionElements)
+  appendEl(wrapper, wrapperElem);
   appendEl(container, finalElements);
 
   container.classList.add('title');

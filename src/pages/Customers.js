@@ -3,7 +3,7 @@ import Preference from './customers/Preference';
 import Steps from './customers/Steps';
 
 const Customers = function () {
-  const container = createEl({ classAttr: ['customers'] });
+  const container = createEl({ classAttr: ['container', 'customers'] });
 
   const elements = [Preference(), Steps()];
   appendEl(container, elements);

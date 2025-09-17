@@ -1,16 +1,201 @@
-#app > .home > .landing {
+.home {
+  margin-bottom: 10vh;
+}
+
+.home .landing {
+  min-height: 550px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.cards .background {
-  height: 300px;
-  width: 250px;
+.home .landing .title,
+.home .landing .cards {
+  flex: 1;
+}
+
+.home .bottom p,
+.home .top p {
+  color: var(--font-secondary);
+  text-shadow: 0px 0px 5px lightgray;
+} 
+
+/* 
+  Landing - Title
+  ================
+*/
+.home .landing .title  {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 10px;
+
+  color: var(--dark-blue);
+}
+
+.home .landing .title h1 {
+  font-size: 3rem;
+  line-height: normal;
+}
+
+.home .landing .title .wrapper {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .landing .callToAction {
+  display: flex;
+
+  position: relative;
   
-  background-color: gray;
+  font-size: 0.8rem;
 }
 
-.cards .foreground {
+.home .landing .callToAction input {
+  padding: 12px;
+  width: 100%;
+
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.home .landing .callToAction button { 
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  position: absolute;
+  right: 0;
+  top: 3px;
+  right: 2px;
+
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  color: var(--background);
+}
+
+.home .landing .callToAction img {
+  height: 1rem;
+}
+
+.home .landing .compLogos {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.home .compLogos .customerLogo {
+  height: 75px;
+}
+
+/* 
+  Landing - Cards
+  ================
+*/
+.landing .cards {
+  flex: 1;
+  position: relative;
+}
+
+.landing .cards > * {
+  border-radius: 20px;
+}
+
+.landing .cards .background {
+  height: 350px;
+  width: 300px;
+  
+  background: linear-gradient(var(--dark-blue), var(--background));
+}
+
+.landing .cards .foreground {
   height: 250px;
   width: 200px;
-  background: lightblue;
+  background: linear-gradient(var(--light-blue), var(--background));
+  
+  position: absolute;
+  top: -40px;
+  left: 40%;
+}
+
+/* 
+  Pitch
+  ======
+*/
+.home .pitch {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: clamp(10px, 15vw, 75px);
+  
+  border-radius: 20px;
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.home .pitch .half {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 
+  Pitch - Top
+  ============
+*/
+.home .top {
+  align-items: center;
+
+  position: relative;
+}
+
+.home .top::before {
+  content: 'FUTURE PAYMENT';
+  position: absolute;
+  top: 0;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.home .top h2 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: black;
+}
+
+.home .top p {
+  padding: 50px;
+}
+
+.home .top > * {
+  flex: 1;
+}
+
+/* 
+  Pitch - Bottom
+  ===============
+*/
+.home .bottom {
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home .bottom .container {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .bottom .icon {
+  height: 40px;
+  width: min-content;
+}
+
+.home .bottom p {
+  font-size: 0.8rem;
 }

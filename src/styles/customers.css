@@ -1,0 +1,138 @@
+#app > .customers {
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #fff;
+}
+
+.customers,
+.customers .preferences,
+.customers .steps {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(10px, 15vw, 75px);
+}
+
+/* 
+  Preferences
+  ============
+*/
+.customers .preferences h2 {
+  padding-bottom: 30px;
+  
+  position: relative;
+
+  text-align: center;
+}
+
+.customers .preferences h2::before {
+  content: 'WHY US';
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.customers .preferences .tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 5px;
+}
+
+.customers .preferences .tile {
+  min-height: 200px;
+  padding: 20px;
+
+  background-color: var(--background);
+  border-radius: 10px;
+}
+
+.customers .volatility {
+  grid-row: 3;
+  grid-column: 1 / 3;
+}
+
+/* 
+  Steps
+  ======
+*/
+.customers .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+
+  
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.customers h2::before {
+  content: 'STEP';
+  
+  position: absolute;
+  top: -25px;
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.customers .steps h2 {
+  position: relative;
+
+  font-size: 1.8rem;
+  max-inline-size: 30ch;
+  font-weight: 500;
+}
+
+.customers .steps .tiles {
+  display: flex;
+  gap: 20px;
+}
+
+.customers .steps .tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+
+  border-radius: 10px;
+  background-color: #123c4d;
+}
+
+.customers .steps .numBlock {
+  height: 4rem;
+
+  position: relative;
+}
+
+.customers .steps .number {
+  position: absolute;
+  top: 0;
+  
+  font-size: 4rem;
+  background-image: linear-gradient(white, #123c4d 70%);
+  color: transparent;
+  background-clip: text;
+}
+
+.customers .steps .wrapper {
+  position: relative;
+  top: -10px;
+}
+
+.customers .steps .tile h4 {
+  font-weight: 500;
+}
+
+.customers .steps .tile p {
+  color: var(--font-secondary);
+  font-size: 0.8rem;
+}

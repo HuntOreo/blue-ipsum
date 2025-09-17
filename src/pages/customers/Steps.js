@@ -4,7 +4,7 @@ import Tile from './steps/Tile';
 const Steps = function () {
   const container = createEl({ 'classAttr': ['steps'] });
   const header = createEl({ tag: 'h2', content: 'Maximize your returns with a Reserve account that generates.' });
-  const tilesContainer = createEl({ classAttr: 'tiles' });
+  const tilesContainer = createEl({ classAttr: ['tiles'] });
 
   const tiles = [
     new Tile({

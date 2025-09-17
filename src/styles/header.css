@@ -1,0 +1,65 @@
+header {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: clamp(10px, 50vw, 75px);
+
+  color: var(--dark-blue);
+  font-size: 16px;
+}
+
+header .logo {
+  min-width: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+header .logo img {
+  height: 1.5rem;
+
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+}
+
+header button {
+  min-width: fit-content;
+
+  border: none;
+  background-color: unset;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+header .accountBtns {
+  display: flex;
+  margin-left: auto;
+  gap: 5px;
+}
+
+header .accountBtns button {
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+header .accountBtns button:first-of-type {
+  border: 1px solid lightgray;
+}
+
+header .accountBtns button:last-of-type {
+  color: var(--background);
+}
+
+
