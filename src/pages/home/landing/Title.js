@@ -25,11 +25,12 @@ const Title = function () {
   appendEl(submit, icon);
 
   const callToActionElements = [input, submit]
-  const finalElements = [headerOne, wrapper, callToActionContainer, Logos()];
+  const wrapperElem = [p, callToActionContainer, Logos()]
+  const finalElements = [headerOne, wrapper];
 
   appendEl(container, headerOne);
-  appendEl(wrapper, p);
   appendEl(callToActionContainer, callToActionElements)
+  appendEl(wrapper, wrapperElem);
   appendEl(container, finalElements);
 
   container.classList.add('title');

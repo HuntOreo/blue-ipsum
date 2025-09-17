@@ -4,6 +4,7 @@
   align-items: center;
   padding: 10px;
   max-width: 1000px;
+  gap: 20px;
 }
 
 .home .landing {
@@ -19,6 +20,12 @@
   flex: 1;
 }
 
+.home .bottom p,
+.home .top p {
+  color: var(--font-secondary);
+  text-shadow: 0px 0px 5px lightgray;
+} 
+
 /* 
   Landing - Titie
   ================
@@ -27,6 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 10px;
 
   color: var(--dark-blue);
 }
@@ -36,10 +44,11 @@
   line-height: normal;
 }
 
-.home .landing .title .wrapper,
-.home .landing .callToAction,
-.home .landing .compLogos {
+.home .landing .title .wrapper {
   max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .home .landing .callToAction {
@@ -129,10 +138,14 @@
 
 .home .pitch .half {
   display: flex;
+  flex-wrap: wrap;
 }
 
+/* 
+  Pitch - Top
+  ============
+*/
 .home .top {
-  display: flex;
   align-items: center;
 
   position: relative;
@@ -156,11 +169,34 @@
 
 .home .top p {
   padding: 50px;
-  
-  color: var(--font-secondary);
-  text-shadow: 0px 0px 5px lightgray;
 }
 
 .home .top > * {
   flex: 1;
+}
+
+/* 
+  Pitch - Bottom
+  ===============
+*/
+.home .bottom {
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.home .bottom .container {
+  min-width: 200px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .bottom .icon {
+  height: 40px;
+  width: min-content;
+}
+
+.home .bottom p {
+  font-size: 0.8rem;
 }
