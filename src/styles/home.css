@@ -96,6 +96,10 @@
 */
 .landing .cards {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   position: relative;
 }
 
@@ -117,7 +121,7 @@
   
   position: absolute;
   top: -40px;
-  left: 40%;
+  right: 0;
 }
 
 /* 
