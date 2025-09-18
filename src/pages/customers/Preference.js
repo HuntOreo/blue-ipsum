@@ -24,8 +24,10 @@ const Preference = function () {
     header: 'No asset volatility',
     name: 'volatility',
     desc: 'Ut turpis odio, commodo sed posuere eu, euismod at magna. Cras sit amet pretium nulla.'
-  }).element;
+  }, true).element;
   const volatilityTag = createEl({ classAttr: ['tag'] });
+  const volatilityTagContent = createEl({ classAttr: ['content'] });
+  appendEl(volatilityTag, volatilityTagContent);
   appendEl(volatilityTile, volatilityTag);
 
   const tiles = [runningTile, withdrawTile, volatilityTile];
