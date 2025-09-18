@@ -1,0 +1,151 @@
+#app > .products {
+  width: clamp(400px, 100vw, 1000px);
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.products,
+.products .pitch {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+  Products - Pitch
+  =================
+*/
+.products .pitch {
+  width: min(800px, 100%);
+  gap: 50px;
+  align-items: center;
+  padding: clamp(10px, 15vw, 75px);
+  padding-bottom: 50px;
+}
+
+.products .pitch .wrapper {
+  max-width: 400px;
+  text-align: center;
+}
+
+.products .pitch .wrapper h2 {
+  position: relative;  
+  
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.products .pitch .desc {
+  font-size: 0.9rem;
+}
+
+.products .pitch .wrapper h2::before {
+  content: 'OUR MISSION';
+  
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.products .pitch .points {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.products .pitch .point {
+  text-align: center;
+}
+
+.products .pitch .point h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.products .pitch .point p {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+/* 
+  Products - Plans
+  =================
+*/
+.products .plans {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 clamp(10px, 15vw, 75px);
+  margin-bottom: 50px;
+
+  position: relative;
+}
+
+.products .plans::before {
+  content: 'CHOOSE PLAN:';
+  
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.products .plans .card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  min-height: 200px;
+
+  border-radius: 10px;
+}
+
+.products .plans .card h2 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+.products .plans .card .wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px 0;
+}
+
+.products .plans .card .wrapper p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.products .plans .card .wrapper .icon {
+  margin-left: auto;
+  height: 20px;
+  fill: var(--light-blue);
+}
+
+.products .plus {
+  color: var(--dark-blue);
+  background: var(--background);
+}
+
+.products .premium {
+  color: var(--background);
+  background: linear-gradient(var(--light-blue), var(--dark-blue));
+}
+
+/* 
+  Products - Call To Action
+  ==========================
+*/
+
