@@ -1,3 +1,25 @@
+@media (max-width: 620px) {
+  #app .customers .preferences .tiles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #app .customers .preferences .tiles .tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .volatility .tag {
+    flex: none !important;
+    height: 200px !important;
+  }
+
+  .volatility .tag .content {
+
+  }
+}
+
 #app > .customers {
   padding: 0;
   border-top-left-radius: 10px;
@@ -68,7 +90,6 @@
   gap: 50px;
   width: 100%;
 
-  
   background-color: var(--dark-blue);
   color: white;
 }
@@ -128,11 +149,90 @@
   top: -10px;
 }
 
-.customers .steps .tile h4 {
+
+/* 
+Steps - Tiles
+==============
+*/
+.customers .tiles .tile {
+  display: flex;
+  gap: 10px;
+}
+
+.customers .tiles .tile h4 {
   font-weight: 500;
 }
 
-.customers .steps .tile p {
+.customers .tiles .tile p {
   color: var(--font-secondary);
   font-size: 0.8rem;
+}
+.customers .tiles .tile h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-wrap: unset;
+  max-inline-size: 25ch;
+}
+
+.running {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.running h1 {
+  font-size: 4rem;
+  color: var(--light-blue);
+}
+
+.running h3 {
+  margin-top: auto;
+}
+
+.withdraw {
+  flex-direction: column;
+}
+
+.withdraw h3 {
+  margin-bottom: auto;
+}
+
+.withdraw div.tag {
+  height: 50px;
+  margin-bottom: auto;
+
+  border-radius: 10px;
+  background: linear-gradient(to right, var(--dark-blue), var(--background));
+}
+
+.volatility .wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.volatility .tag {
+  flex: 2;
+
+  position: relative;
+  padding: 10px;
+  
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px lightgray;
+}
+
+.volatility .tag .content {
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    -0.45turn, 
+    #fff,
+    #fff 50%,
+    var(--light-blue) 50%,
+    var(--dark-blue) 80%
+  );
 }

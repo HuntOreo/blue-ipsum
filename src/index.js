@@ -1,7 +1,8 @@
 import './style.css';
 import './styles/header.css';
 import './styles/home.css';
-import './styles/customers.css'
+import './styles/customers.css';
+import './styles/products.css';
 import Header from './parts/Header.js';
 import Home from './pages/Home.js';
 import Footer from './parts/Footer.js';
